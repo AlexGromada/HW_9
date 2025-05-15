@@ -129,7 +129,7 @@ body {
 .experience__item{
     width: 141px;
     height: 50px;
-    margin-left: 45px;
+    margin-right: 45px;
     display: flex;
     justify-content: space-between;
 }
