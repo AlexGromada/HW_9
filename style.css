@@ -120,16 +120,17 @@ body {
     width: 1920px;
     height: 250px;
     padding-left: 409px;
+    padding-right: 409px;
     padding-top: 100px;
     box-sizing: border-box;
     display: flex;
+    justify-content: space-between;
     background-color: #34547A;
 }
 
 .experience__item{
     width: 141px;
     height: 50px;
-    margin-right: 45px;
     display: flex;
     justify-content: space-between;
 }
