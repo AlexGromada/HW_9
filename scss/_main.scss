@@ -1,0 +1,220 @@
+@use "common/_fonts.scss";
+@use "common/_mixins.scss" as mixin;
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+}
+
+.container.theme {
+    background-color: #34547A;
+}
+
+.container.grey {
+    background-color: #EEEFF1;
+}
+
+.design-layout {
+    @include mixin.content(700px);
+    padding-left: 400px;
+    box-sizing: border-box;
+
+    &__nav {
+        @include mixin.space_between;
+        list-style-type: none;
+        width: 565px;
+        height: 16px;
+        padding-top: 79px;
+        margin-bottom: 162px;
+
+        * {
+            color: #000000;
+            @extend %font_text;
+            letter-spacing: 10%;
+        }
+
+        a,
+        a:visited {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #34547A;
+        }
+    }
+
+    &__title {
+        color: #000000;
+        font-family: "Roboto", sans-serif;
+        height: 45px;
+        font-size: 48px;
+        @extend %font_title;
+        margin-bottom: 60px;
+    }
+
+    &__text {
+        width: 540px;
+        height: 65px;
+        margin-bottom: 65px;
+        color: #727272;
+        @extend %font_text;
+        letter-spacing: 0;
+    }
+
+    &__button {
+        width: 225px;
+        height: 65px;
+        background-color: #34547A;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            color: #FFFFFF;
+            @extend %font_text;
+            letter-spacing: 10%;
+            text-align: center;
+        }
+    }
+}
+
+.about-me {
+    @include mixin.content(359px);
+    padding-top: 112px;
+    box-sizing: border-box;
+
+    * {
+        padding-left: 690px;
+        width: 540px;
+        text-align: center;
+    }
+
+    &__title {
+        height: 30px;
+        color: #000000;
+        @extend %font_title;
+        font-size: 32px;
+        margin-bottom: 50px;
+    }
+
+    &__text {
+        color: #727272;
+        @extend %font_text;
+        letter-spacing: 0;
+    }
+}
+
+.experience {
+    @include mixin.content(250px);
+    padding-left: 409px;
+    padding-right: 409px;
+    padding-top: 100px;
+    box-sizing: border-box;
+    @include mixin.space_between;
+
+    &__item {
+        width: 141px;
+        height: 50px;
+        @include mixin.space_between;
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+
+        div {
+            width: 71px;
+            height: 44px;
+            padding-top: 3px;
+            @include mixin.space_between;
+            flex-direction: column;
+        }
+
+        h3 {
+            height: 19px;
+            color: #FFFFFF;
+            @extend %font_title;
+            font-size: 21px;
+        }
+
+        p {
+            height: 15px;
+            color: #FFFFFF;
+            @extend %font_text;
+            letter-spacing: 0;
+        }
+    }
+}
+
+.video {
+    @include mixin.content(1004px);
+    padding-top: 100px;
+    box-sizing: border-box;
+
+    &__text {
+        width: 540px;
+        height: 147px;
+        margin-left: 690px;
+        margin-bottom: 62px;
+
+        * {
+            text-align: center;
+        }
+
+        h2 {
+            height: 30px;
+            color: #000000;
+            font-size: 32px;
+            @extend %font_title;
+            margin-bottom: 50px;
+        }
+
+        p {
+            height: 67px;
+            color: #000000;
+            @extend %font_text;
+            letter-spacing: 0;
+        }
+    }
+
+    &__image {
+        width: 1110px;
+        height: 600px;
+        margin-left: 405px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("../video_bg.png");
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
+
+.footer {
+    @include mixin.content(151px);
+    padding-left: 406px;
+    padding-top: 50px;
+    box-sizing: border-box;
+
+    h3 {
+        height: 19px;
+        color: #FFFFFF;
+        @extend %font_title;
+        font-size: 21px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        height: 12px;
+        color: #FFFFFF;
+        @extend %font_text;
+        letter-spacing: 0;
+    }
+}

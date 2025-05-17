@@ -1,0 +1,10 @@
+@mixin content($height) {
+    width: 1920px;
+    height: $height;
+    margin: 0 auto;
+}
+
+@mixin space_between {
+    display: flex;
+    justify-content: space-between;
+}
