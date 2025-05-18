@@ -1,16 +1,19 @@
 @mixin content($height) {
     width: 1110px;
     height: $height;
+    box-sizing: border-box;
 }
 
 @mixin content_tablet($height) {
     width: 740px;
     height: $height;
+    box-sizing: border-box;
 }
 
 @mixin content_phone($height) {
     width: 100%;
     height: $height;
+    box-sizing: border-box;
 }
 
 @mixin space_between {
