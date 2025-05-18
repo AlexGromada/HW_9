@@ -20,6 +20,10 @@ body {
   width: 100%;
 }
 
+.container > * {
+  margin: 0 auto;
+}
+
 .container.theme {
   background-color: #34547A;
 }
@@ -29,10 +33,9 @@ body {
 }
 
 .design-layout {
-  width: 1920px;
+  width: 1110px;
   height: 700px;
-  margin: 0 auto;
-  padding-left: 400px;
+  padding-top: 79px;
   box-sizing: border-box;
 }
 .design-layout__nav {
@@ -41,12 +44,11 @@ body {
   list-style-type: none;
   width: 565px;
   height: 16px;
-  padding-top: 79px;
   margin-bottom: 162px;
 }
 .design-layout__nav * {
   color: #000000;
-  letter-spacing: 10%;
+  letter-spacing: 10;
 }
 .design-layout__nav a,
 .design-layout__nav a:visited {
@@ -58,7 +60,6 @@ body {
 }
 .design-layout__title {
   color: #000000;
-  font-family: "Roboto", sans-serif;
   height: 45px;
   font-size: 48px;
   margin-bottom: 60px;
@@ -85,15 +86,14 @@ body {
 }
 
 .about-me {
-  width: 1920px;
+  width: 1110px;
   height: 359px;
-  margin: 0 auto;
   padding-top: 112px;
   box-sizing: border-box;
 }
 .about-me * {
-  padding-left: 690px;
   width: 540px;
+  margin: 0 auto;
   text-align: center;
 }
 .about-me__title {
@@ -108,11 +108,8 @@ body {
 }
 
 .experience {
-  width: 1920px;
+  width: 1110px;
   height: 250px;
-  margin: 0 auto;
-  padding-left: 409px;
-  padding-right: 409px;
   padding-top: 100px;
   box-sizing: border-box;
   display: flex;
@@ -131,7 +128,6 @@ body {
 .experience__item div {
   width: 71px;
   height: 44px;
-  padding-top: 3px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -148,16 +144,15 @@ body {
 }
 
 .video {
-  width: 1920px;
+  width: 1110px;
   height: 1004px;
-  margin: 0 auto;
   padding-top: 100px;
   box-sizing: border-box;
 }
 .video__text {
   width: 540px;
   height: 147px;
-  margin-left: 690px;
+  margin: 0 auto;
   margin-bottom: 62px;
 }
 .video__text * {
@@ -177,7 +172,6 @@ body {
 .video__image {
   width: 1110px;
   height: 600px;
-  margin-left: 405px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -189,10 +183,8 @@ body {
 }
 
 .footer {
-  width: 1920px;
+  width: 1110px;
   height: 151px;
-  margin: 0 auto;
-  padding-left: 406px;
   padding-top: 50px;
   box-sizing: border-box;
 }
@@ -206,6 +198,236 @@ body {
   height: 12px;
   color: #FFFFFF;
   letter-spacing: 0;
+}
+
+@media (max-width: 1300px) {
+  .design-layout {
+    width: 740px;
+    height: 550px;
+    padding-top: 50px;
+  }
+  .design-layout__nav {
+    margin-bottom: 102px;
+  }
+  .design-layout__title {
+    height: 40px;
+    font-size: 42px;
+    margin-bottom: 40px;
+  }
+  .design-layout__text {
+    margin-bottom: 70px;
+  }
+  .design-layout__button {
+    width: 190px;
+    height: 60px;
+  }
+  .about-me {
+    width: 740px;
+    height: 330px;
+    padding-top: 92px;
+    box-sizing: border-box;
+  }
+  .about-me__title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  .experience {
+    width: 740px;
+    height: 190px;
+    padding-top: 70px;
+  }
+  .experience__item {
+    width: 110px;
+    height: 45px;
+  }
+  .experience__item img {
+    width: 45px;
+    height: 45px;
+    padding-right: 5px;
+  }
+  .experience__item div {
+    width: 65px;
+    height: 35px;
+  }
+  .experience__item h3 {
+    font-size: 19px;
+  }
+  .video {
+    width: 740px;
+    height: 750px;
+    padding-top: 60px;
+  }
+  .video__text {
+    margin-bottom: 40px;
+  }
+  .video__text h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .video__image {
+    width: 740px;
+    height: 400px;
+  }
+  .footer {
+    width: 740px;
+    height: 151px;
+    padding-top: 50px;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .design-layout {
+    width: 100%;
+    height: 400px;
+    padding-top: 40px;
+  }
+  .design-layout__nav {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .design-layout__nav a {
+    font-size: 14px;
+  }
+  .design-layout__title {
+    height: 40px;
+    font-size: 33px;
+    margin-bottom: 15px;
+  }
+  .design-layout__text {
+    margin-bottom: 60px;
+    width: 100%;
+  }
+  .design-layout__button {
+    width: 170px;
+    height: 55px;
+  }
+  .about-me {
+    width: 100%;
+    height: 260px;
+    padding-top: 50px;
+    box-sizing: border-box;
+  }
+  .about-me * {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .about-me__title {
+    width: 100%;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .about-me__text {
+    width: 100%;
+  }
+  .experience {
+    width: 100%;
+    height: 330px;
+    padding-top: 70px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .experience__item {
+    width: 120px;
+    height: 45px;
+    padding-right: 45px;
+    padding-left: 45px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .experience__item img {
+    width: 40px;
+    height: 40px;
+    padding-right: 5px;
+  }
+  .experience__item div {
+    width: 65px;
+    height: 35px;
+  }
+  .experience__item h3 {
+    font-size: 19px;
+  }
+  .video {
+    width: 100%;
+    height: 650px;
+    padding-top: 60px;
+  }
+  .video__text {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .video__text h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .video__image {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../video_bg.png");
+  }
+  .video__image img {
+    width: 100px;
+    height: 100px;
+  }
+  .footer {
+    width: 100%;
+    height: 110px;
+    padding-top: 30px;
+    box-sizing: border-box;
+  }
+  .footer h3 {
+    height: 19px;
+    color: #FFFFFF;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .footer p {
+    font-size: 12px;
+    height: 12px;
+  }
+}
+@media (max-width: 425px) {
+  .experience {
+    padding-top: 30px;
+  }
+  .experience__item {
+    width: 115px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .video {
+    width: 100%;
+    height: 500px;
+    padding-top: 60px;
+  }
+  .video__text {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .video__text h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .video__image {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../video_bg.png");
+  }
+  .video__image img {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

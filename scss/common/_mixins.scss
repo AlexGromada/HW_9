@@ -1,7 +1,16 @@
 @mixin content($height) {
-    width: 1920px;
+    width: 1110px;
     height: $height;
-    margin: 0 auto;
+}
+
+@mixin content_tablet($height) {
+    width: 740px;
+    height: $height;
+}
+
+@mixin content_phone($height) {
+    width: 100%;
+    height: $height;
 }
 
 @mixin space_between {

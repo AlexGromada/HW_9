@@ -9,6 +9,10 @@ body {
     width: 100%;
 }
 
+.container>*{
+    margin: 0 auto;
+}
+
 .container.theme {
     background-color: #34547A;
 }
@@ -19,7 +23,7 @@ body {
 
 .design-layout {
     @include mixin.content(700px);
-    padding-left: 400px;
+    padding-top: 79px;
     box-sizing: border-box;
 
     &__nav {
@@ -27,13 +31,12 @@ body {
         list-style-type: none;
         width: 565px;
         height: 16px;
-        padding-top: 79px;
         margin-bottom: 162px;
 
         * {
             color: #000000;
             @extend %font_text;
-            letter-spacing: 10%;
+            letter-spacing: 10;
         }
 
         a,
@@ -49,7 +52,6 @@ body {
 
     &__title {
         color: #000000;
-        font-family: "Roboto", sans-serif;
         height: 45px;
         font-size: 48px;
         @extend %font_title;
@@ -88,8 +90,8 @@ body {
     box-sizing: border-box;
 
     * {
-        padding-left: 690px;
         width: 540px;
+        margin: 0 auto;
         text-align: center;
     }
 
@@ -110,8 +112,6 @@ body {
 
 .experience {
     @include mixin.content(250px);
-    padding-left: 409px;
-    padding-right: 409px;
     padding-top: 100px;
     box-sizing: border-box;
     @include mixin.space_between;
@@ -129,7 +129,6 @@ body {
         div {
             width: 71px;
             height: 44px;
-            padding-top: 3px;
             @include mixin.space_between;
             flex-direction: column;
         }
@@ -158,7 +157,7 @@ body {
     &__text {
         width: 540px;
         height: 147px;
-        margin-left: 690px;
+        margin: 0 auto;
         margin-bottom: 62px;
 
         * {
@@ -182,9 +181,7 @@ body {
     }
 
     &__image {
-        width: 1110px;
-        height: 600px;
-        margin-left: 405px;
+        @include mixin.content(600px);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -199,7 +196,6 @@ body {
 
 .footer {
     @include mixin.content(151px);
-    padding-left: 406px;
     padding-top: 50px;
     box-sizing: border-box;
 
